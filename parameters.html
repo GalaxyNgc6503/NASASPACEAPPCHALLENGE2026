@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://power.larc.nasa.gov; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Pick an Earth science variable, see how it has changed around your place, how big the change is and how sure we can be. NASA POWER data.">
+<title>EarthWatch</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/earthwatch.css">
+<script src="js/boot.js"></script>
+<script type="module" src="js/params.js"></script>
+</head>
+<body>
+<a class="skip" href="#result">Skip to the parameters</a>
+<div class="wrap" id="app"><p class="note loading" role="status">Loading EarthWatch…</p></div>
+<noscript><p class="note warn">EarthWatch needs JavaScript: this site has no server, so your browser asks NASA POWER for the data and draws the charts.</p></noscript>
+<div id="announce" class="sr" aria-live="polite"></div>
+</body>
+</html>
